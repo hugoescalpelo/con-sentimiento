@@ -1,10 +1,24 @@
+/*
+Con-Sentimiento.
+Fecha: 2025-11-15
+By: Luma Escalpelo
+Para: e-Cuerpo
+
+Este programa es el ejemplo base para el manejo de la pantal SSD1306 con una resolución de 128x64 y 128x32.
+
+Este programa esta escritop especifícamente para el ESP32 DevKitV1, encontrado en la lista de microtroladores de Espressif como DOIT ESP32.
+La versión de core necesita es 2.0.17, la versión 3 en adelante genera incompatibilidad con la bilbioteca <ESPAsyncWebServer.h> 
+
+
+*/
+
 // Proyecto: Con-Sentimiento COMPLETO con frases, scroll, captive portal y robusta aleatorización
-#include <WiFi.h>
+#include <WiFi.h> // Biblioteca Wifi para el ESP32 DevKit V1 y similares
 #include <DNSServer.h>
-#include <ESPAsyncTCP.h>
-#include <ESPAsyncWebServer.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <AsyncTCP.h> // by dvarrel
+#include <ESPAsyncWebServer.h> // by lacamera
+#include <Adafruit_GFX.h> // by Adafruit
+#include <Adafruit_SSD1306.h> // by Adafruit
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 32
