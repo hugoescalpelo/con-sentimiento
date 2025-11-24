@@ -86,7 +86,7 @@ void mostrarMarquesina(const char* text) {
     return;
   }
   display.clearDisplay();
-  display.setRotation(2);
+  display.setRotation(2); // 0=0°, 1=90°, 2=180°, 3=270°
   display.setTextColor(SSD1306_WHITE);
   display.setTextSize(2);
   display.setTextWrap(false);
