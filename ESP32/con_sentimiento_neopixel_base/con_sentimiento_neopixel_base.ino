@@ -20,7 +20,7 @@ LEDs: FastLED + efectos tipo DemoReel100
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#include <FastLED.h>            // FastLED para efectos DemoReel
+#include <FastLED.h>            // FastLED 3.9.20 By Damiel García y FastLED NeoPixel by David Madison
 #include <esp_system.h>         // esp_random()
 
 // -------------------------
