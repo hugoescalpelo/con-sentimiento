@@ -70,9 +70,7 @@ const unsigned long debounceDelay = 30; // ms
 // TEXTOS Y ESTADO OLED
 //--------------------------
 const char* frases_oled[] = {
-  "Mas amor, menos prisa.",
-  "Este cuerpo elige cuando.",
-  "Hoy solo recibo dulzura."
+  "Miedo", "Dolor", "Perdida", "Ausencia", "Duda", "Tristeza"
 };
 const int total_frases_oled = sizeof(frases_oled)/sizeof(frases_oled[0]);
 
@@ -80,8 +78,8 @@ int frase_idx = 0;  // índice actual de frase OLED
 
 // Frases captive
 const char* frases_captive[] = {
-  "Tu mensaje quedara en mi cuerpo.", "Escribe, domina, pero cuida.",
-  "Hoy decides que leere o lo decido yo."
+  "Tu mensaje quedara en mi cuerpo.", "Escribe en mi.",
+  "Hoy decides que leere."
 };
 const int total_frases_captive = sizeof(frases_captive)/sizeof(frases_captive[0]);
 
