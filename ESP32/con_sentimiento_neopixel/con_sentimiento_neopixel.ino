@@ -20,7 +20,7 @@ LEDs: FastLED + efectos tipo DemoReel100
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#include <FastLED.h>            // FastLED 3.9.20 By Damiel García y FastLED NeoPixel by David Madison
+#include <FastLED.h>            // FastLED 3.9.20 By Daniel García y FastLED NeoPixel by David Madison
 #include <esp_system.h>         // esp_random()
 
 // -------------------------
@@ -35,8 +35,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 // -------------------------
 // CONFIGURACIÓN WiFi / DNS
 // -------------------------
-const char* ssid     = "con-sentimiento";
-const char* password = "amoramor";
+const char* ssid     = "con-sentimiento01";
+const char* password = "amor01";
 
 DNSServer dns;
 AsyncWebServer server(80);
@@ -60,33 +60,14 @@ CRGB leds[NUM_LEDS_TOTAL];
 // TEXTOS Y ESTADO OLED
 //--------------------------
 const char* frases_oled[] = {
-  "Mas amor, menos prisa.", "Este cuerpo elige cuando.", "Hoy solo recibo dulzura.",
-  "Disponibilidad es un regalo.", "Aqui mando yo o no.", "Con-Sentimiento: obedecer se siente bien.",
-  "A tu ritmo, a mi pulso.", "Cadena invisible, deseo visible.", "Hoy obedezco a mis ganas.",
-  "Me entrego, pero no me rindo.", "Controla mi cuello, no mi vida.", "Dame ordenes suaves.",
-  "Mi cuerpo responde al afecto.", "Te leo, no te sigo.", "Si me sujetas, hazlo bonito.",
-  "Soy mia, pero te presto mi cuello.", "Amar es elegir obedecer.", "Estoy disponible pero solo para ti.",
-  "Obedezco, pero solo a quien elijo.", "Sumisa, pero critica.", "Con-sentimiento o nada.",
-  "Mi cuello obedece, mi mente elige.", "No siempre disponible, disfrutalo.", "Si controlas, cuida.",
-  "Tambien me comparto, con limites suaves.", "Deseo libre, consentimiento firme.", "Amores multiples, claros.",
-  "Sumision consensuada, vinculos expansivos.", "Te ofrezco mi pulso, no mi exclusividad.",
-  "Cuerpxs compartidos, cuidados multiplicados.", "Consentir tambien es compartir.", "No pertenezco, pero me entrego."
+  "Mas amor, menos prisa.", "Este cuerpo elige cuando.", "Hoy solo recibo dulzura."
 };
 const int total_frases_oled = sizeof(frases_oled)/sizeof(frases_oled[0]);
 
 // Frases captive
 const char* frases_captive[] = {
-  "¿Que quieres susurrar hoy?", "Tu mensaje quedara en mi cuerpo.", "Escribe, domina, pero cuida.",
-  "Hoy decides que leere o lo decido yo.", "Acariciame con palabras.", "Mi cuerpo: tu mensaje, mi consentimiento.",
-  "Solo quien cuida, ordena.", "Escribe con respeto o no escribas.", "Hazme vibrar, pero suave.",
-  "Palabras que aprietan bonito.", "No me llames, escribeme.", "Comando recibido si lo deseo.",
-  "Quiero leer algo que me abrace.", "Aqui la palabra es poder.", "Conectate a mi deseo, no a mi urgencia.",
-  "No soy asistente, soy cuerpo.", "Mis latidos, tu mensaje.", "¿Te atreves a cuidar mientras mandas?",
-  "No estoy en venta, solo en deseo.", "Elige palabras que amarren.", "No obedezco algoritmos, solo afectos.",
-  "Dame un comando dulce.", "Ordena, pero sin herirme.", "Soy cuerpx, no dispositivo.",
-  "Aqui cuidamos, aqui compartimos.", "Mas vinculos, mas afecto.", "No soy solo tuya, soy mia y me comparto.",
-  "Amar sin poseer, mandar sin invadir.", "Consentimiento tambien en lo multiple.",
-  "Domina, pero comparte.", "Conectarse es cuidarnos en red.", "No hay cadenas, solo acuerdos hermosos."
+  "Tu mensaje quedara en mi cuerpo.", "Escribe, domina, pero cuida.",
+  "Hoy decides que leere o lo decido yo."
 };
 const int total_frases_captive = sizeof(frases_captive)/sizeof(frases_captive[0]);
 
